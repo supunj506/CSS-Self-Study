@@ -10,65 +10,96 @@
     <meta charset="UTF-8">
     <title>CSS Selector</title>
 <style>
-    /*01 - Universal Selector*/
-*{
-    font-size: 10px;
-    color: black;
-}
-    /*02 - Type Selector*/
-div{
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
-h1{
-    font-size: 20px;
-    color: red;
-    border: 1px solid;
-}
+/*    !*01 - Universal Selector--------------------------------------------------------------*!*/
+/**{*/
+/*    font-size: 10px;*/
+/*    color: black;*/
+/*}*/
+/*    !*02 - Type Selector---------------------------------------------------------------------*!*/
+/*div{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: black;*/
+/*}*/
+/*h1{*/
+/*    font-size: 20px;*/
+/*    color: red;*/
+/*    border: 1px solid;*/
+/*}*/
 
-    /*03 - Id Selector*/
-#para{
-    font-size: 30px;
-    color: aqua;
-}
+/*    !*03 - Id Selector---------------------------------------------------------------------*!*/
+/*#para{*/
+/*    font-size: 30px;*/
+/*    color: aqua;*/
+/*}*/
 
-    /*04 - Class Selector*/
-.paraset{
-    font-size: 50px;
-    color: red;
-}
+/*    !*04 - Class Selector---------------------------------------------------------------------*!*/
+/*.paraset{*/
+/*    font-size: 50px;*/
+/*    color: red;*/
+/*}*/
 
-    /*05 - Attribute Selector*/
-[id]{
-    background-color: blueviolet;
-    font-size: 30px;
-}
-[id="para"]{
-    background-color: aqua;
-}
+/*    !*05 - Attribute Selector---------------------------------------------------------------------*!*/
+/*[id]{*/
+/*    background-color: blueviolet;*/
+/*    font-size: 30px;*/
+/*}*/
+/*[id="para"]{*/
+/*    background-color: aqua;*/
+/*}*/
 
-    /*06 - Grouping Selector*/
-h1,p,#para{
-    font-size: 50px;
-}
+/*    !*06 - Grouping Selector---------------------------------------------------------------------*!*/
+/*h1,p,#para{*/
+/*    font-size: 50px;*/
+/*}*/
 
-h1:hover{
-    color: red;
-    cursor: pointer;
-    font-size: 50px ;
+    /*07 - Pseudo class selector---------------------------------------------------------------------*!*/
 
-}
-h1:first-child{
-font-style: oblique;
-font-size: 60px;
-}
+/*h1:hover{*/
+/*    color: red;*/
+/*    cursor: pointer;*/
+/*    font-size: 50px ;*/
+/*}*/
+/*---------------------------------------------------*/
+/*h1:first-child{*/
+/*font-style: oblique;*/
+/*font-size: 60px;*/
+/*}*/
+/*p:last-child{*/
+/*    font-style: oblique;*/
+/*    font-size: 60px;*/
+/*}*/
+/*---------------------------------------------------*/
+/*h1:first-child:before{*/
+/*    content: " 😎 ";*/
+/*    font-size: 40px;*/
+/*}*/
+/*h1:first-child:after{*/
+/*    content: " 😎 ";*/
+/*    font-size: 40px;*/
+/*}*/
+/*---------------------------------------------------*/
+/*button:active{*/
+/*    color: blueviolet;*/
+/*}*/
+/*---------------------------------------------------*/
+/*a:visited{*/
+/*    color: darkgrey;*/
+/*}*/
+/*---------------------------------------------------*/
+/*input:focus{*/
+/*    background-color: darkgrey;*/
+/*    border: blue;*/
+/*}*/
+
 
 
 </style>
+
 </head>
+
 <body>
-<p>sxshjxs</p>
+
 <h1 >Cascading Style Sheets</h1>
 <h1 >Cascading Style Sheets</h1>
 <h1 >Cascading Style Sheets</h1>
@@ -98,5 +129,13 @@ font-size: 60px;
 <div>
 
 </div>
+<button >Click Me</button>
+<p class="paraset">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, perferendis.</p>
+<br>
+<a href="https://google.com" target="_blank">go to google</a>
+<br>
+<br>
+<input type="text" placeholder="Name">
 </body>
+
 </html>
