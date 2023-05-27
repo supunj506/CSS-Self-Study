@@ -1,0 +1,102 @@
+<!--* @author : @MJ-->
+<!--* Date    : 5/27/2023-->
+<!--* Time    : 10:59 AM-->
+<!--* Project : CSS-->
+<!--* Created by IntelliJ IDEA.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selector</title>
+<style>
+    /*01 - Universal Selector*/
+*{
+    font-size: 10px;
+    color: black;
+}
+    /*02 - Type Selector*/
+div{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+h1{
+    font-size: 20px;
+    color: red;
+    border: 1px solid;
+}
+
+    /*03 - Id Selector*/
+#para{
+    font-size: 30px;
+    color: aqua;
+}
+
+    /*04 - Class Selector*/
+.paraset{
+    font-size: 50px;
+    color: red;
+}
+
+    /*05 - Attribute Selector*/
+[id]{
+    background-color: blueviolet;
+    font-size: 30px;
+}
+[id="para"]{
+    background-color: aqua;
+}
+
+    /*06 - Grouping Selector*/
+h1,p,#para{
+    font-size: 50px;
+}
+
+h1:hover{
+    color: red;
+    cursor: pointer;
+    font-size: 50px ;
+
+}
+h1:first-child{
+font-style: oblique;
+font-size: 60px;
+}
+
+
+</style>
+</head>
+<body>
+<p>sxshjxs</p>
+<h1 >Cascading Style Sheets</h1>
+<h1 >Cascading Style Sheets</h1>
+<h1 >Cascading Style Sheets</h1>
+<h1 >Cascading Style Sheets</h1>
+
+<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet doloremque officia quod sunt. Ab accusamus alias
+    consectetur dolorem doloremque molestias pariatur quo rerum ut, voluptate? Error labore sit voluptates
+    voluptatibus?</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, perferendis.</p>
+
+<p class="paraset">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, perferendis.</p>
+
+<p class="paraset">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, perferendis.</p>
+
+<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, perferendis.</p>
+
+<p class="paraset">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, perferendis.</p>
+
+
+<ul>
+    <li>Akamai</li>
+    <li>jujube's</li>
+    <li>AaxVVHViva</li>
+    <li>WebbAxeman</li>
+</ul>
+<div>
+
+</div>
+</body>
+</html>
