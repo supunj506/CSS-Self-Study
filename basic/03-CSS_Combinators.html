@@ -1,0 +1,86 @@
+<!--* @author : @MJ-->
+<!--* Date    : 5/27/2023-->
+<!--* Time    : 2:10 PM-->
+<!--* Project : CSS-->
+<!--* Created by IntelliJ IDEA.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinator</title>
+    <style>
+        /*01 - Child Combinator-----------------------------------------------------------------------*/
+        main>section>p{
+            font-size: 30px;
+            color: chartreuse;
+        }
+
+        /*02 - Descendant Combinator-------------------------------------------------------------------*/
+        section h1{
+            font-size: 50px;
+            color: blueviolet;
+        }
+
+        /*03 - Adjacent Combinator---------------------------------------------------------------------*/
+        h1 + p {
+            font-size: 70px;
+            color: chocolate;
+        }
+        /*main h1 + p {*/
+        /*    font-size: 70px;*/
+        /*    color: chocolate;*/
+        /*}*/
+
+        /*/04 - General Sibling Combinator--------------------------------------------------------------*/
+        h1 ~ p{
+            font-size: 10px;
+            color: blue;
+        }
+        /*main h1 ~ p{*/
+        /*    font-size: 10px;*/
+        /*    color: blue;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<main>
+
+    <h1>CSS Combinator</h1>
+
+    <p>YES Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, autem?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, autem?</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, autem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, autem?</p>
+    <h1>last h1 on main direct root</h1>
+
+    <section>
+        <h1>h1 In Section</h1>
+        <p>Paragraph In Section </p>
+    </section>
+
+    <section>
+        <div>
+            <h1>h1 on section > div</h1>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <article>
+                <h1>h1 on section > div > article</h1>
+            </article>
+        </div>
+        <div>
+            <h1>h1 on section > div</h1>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
