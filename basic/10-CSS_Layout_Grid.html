@@ -1,0 +1,38 @@
+<!--* @author : @MJ-->
+<!--* Date    : 6/1/2023-->
+<!--* Time    : 5:33 PM-->
+<!--* Project : CSS-->
+<!--* Created by IntelliJ IDEA.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout</title>
+    <style>
+        section {
+            border: 2px solid red;
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px 10px;
+        }
+        section > div {
+            border: 1px solid blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+<section>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+  <div>D</div>
+  <div>E</div>
+  <div>F</div>
+</section>
+</body>
+</html>
