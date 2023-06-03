@@ -1,0 +1,94 @@
+<!--* @author : @MJ-->
+<!--* Date    : 6/3/2023-->
+<!--* Time    : 1:48 PM-->
+<!--* Project : CSS-->
+<!--* Created by IntelliJ IDEA.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <style>
+        main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main > div {
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            border-radius: 100%;
+            background-color: yellow;
+            animation-name: animation1;
+            animation-duration: 1s;
+            animation-iteration-count:infinite;
+
+
+        }
+
+        @keyframes animation1 {
+            /*from {*/
+            /*    background: #0ca6e8;*/
+            /*    border: 30px solid black;*/
+            /*}*/
+            /*to {*/
+            /*    background: crimson;*/
+            /*    border: 3px solid black;*/
+            /*}*/
+
+            /*can make 100 frames*/
+            0% {
+                border: 3px solid black;
+            }
+            10% {
+                border: 6px solid black;
+            }
+            20% {
+                border: 9px solid black;
+            }
+            30% {
+                border: 12px solid black;
+            }
+            40% {
+                border: 15px solid black;
+            }
+            50% {
+                border: 18px solid black;
+            }
+            60% {
+                border: 21px solid black;
+            }
+            70% {
+                border: 24px solid black;
+            }
+            80% {
+                border: 27px solid black;
+            }
+            90% {
+                border: 30px solid black;
+            }
+            100% {
+                border: 30px solid black;
+            }
+
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <div></div>
+
+</main>
+
+</body>
+</html>
