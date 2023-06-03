@@ -10,32 +10,29 @@
     <meta charset="UTF-8">
     <title>Transition Case 01</title>
     <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet">
     <style>
+
         main {
             width: 100%;
             height: 100vh;
         }
-        main > nav {
+
+        main > section {
             width: 20%;
             height: 100%;
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
-
-
-        }
-        main > nav > a {
-            width:30% ;
-            height:10% ;
-            background-color: indigo;
-            box-shadow: -20px 11px 17px 0 black;
-            border-bottom-right-radius: 10px;
-            border-top-right-radius: 10px;
-            transition-property: all;
-            transition-duration: 0.5s;
+            position: relative;
+            right: 180px;
         }
 
-        main > nav > a:hover{
+        main > section > div {
+            left: 0;
+            position: relative;
             width: 100%;
             height: 10%;
             background-color: indigo;
@@ -44,24 +41,29 @@
             display: flex;
             justify-content: space-between;
             box-shadow: -20px 11px 17px 0 black;
+            cursor: pointer;
+            transition-duration: 1s;
             transition-property: all;
-            transition-duration: 0.5s;
-
         }
 
+        main > section > div:hover {
+            background-color: green;
+            left: 180px;
+            transition-duration: 1s;
+            transition-property: all;
+        }
 
-
-
-        main > nav > a > p {
-            text-decoration: none;
+        main > section > div > p {
             color: white;
             font-size: 25px;
             font-weight: bold;
             position: relative;
             left: 5%;
-
+            font-family: 'Roboto', sans-serif;
+            /*font-family: 'Rubik', sans-serif;*/
         }
-        main > nav > a > img {
+
+        main > section > div > img {
             width: 27%;
             height: 90%;
             position: relative;
@@ -72,29 +74,33 @@
 </head>
 <body>
 <main>
-    <nav>
-        <a href="">
+    <section>
+        <div>
             <p>Menu One</p>
             <img src="/assets/png_for_transition/contact.png" alt="contact.png">
-        </a>
-        <a href="">
+        </div>
+
+
+        <div>
             <p>Menu Two</p>
             <img src="/assets/png_for_transition/shipped.png" alt="shipped.png">
-        </a>
-        <a href="">
+        </div>
+        <div>
             <p>Menu Three</p>
             <img src="/assets/png_for_transition/ebook.png" alt="ebook.png">
-        </a>
-        <a href="">
+        </div>
+        <div>
             <p>Menu Four</p>
             <img src="/assets/png_for_transition/add-layer.png" alt="add-layer.png">
 
-        </a>
-        <a href="">
+        </div>
+        <div>
             <p>Menu Five</p>
             <img src="/assets/png_for_transition/cart.png" alt="cart.png">
-        </a>
-    </nav>
+        </div>
+    </section>
+
+
 
 
 </main>
